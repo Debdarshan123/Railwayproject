@@ -1,0 +1,23 @@
+create database rail_inq;
+use rail_inq;
+
+create table user_info(username varchar(30) primary key ,pass varchar(30),phone VARCHAR(20));
+
+create table book_ticket(user_id varchar(30) primary key ,name varchar(30),age varchar(30),starting_point varchar(30),end_point varchar(30),phone varchar(30),book_date varchar(30),j_date varchar(30),train_name varchar(30), train_no varchar(25),seat_type varchar(30) );
+
+create table report (phone varchar(30),report varchar(100));
+
+create table trains_detail(train_name varchar(30),train_no varchar(25), source varchar(30),destination varchar(25),total_ac1 varchar(30),avlble_ac1 varchar(30),total_ac2 varchar(30),avlble_ac2 varchar(30),total_slp varchar(25),avlble_slp varchar(30));
+
+
+insert into trains_detail values('Ajmer Express',' 12989',' Dadar',' Ajmer','100','100','200','200','150','150');
+insert into trains_detail values('Amravathi Express',' 18047',' Howrah ','Vasco-da-Gama','154','62','154','154','210','100');
+insert into trains_detail values('Asansol Express',' 13505 ','Digha',' Asansol','45','45','56','56','78','51');
+insert into trains_detail values('Bhriqu Express',' 22427',' Ballia ','Anand Vihar (T)','100','100','241','240','150','120');
+insert into trains_detail values('Chennai Express',' 12604',' Hyderabad',' Chennai','300','280','160','160','290','150');
+insert into trains_detail values('Deoghar Express',' 13319 ','Ranchi',' Deoghar','90','90','60','60','56','56');
+insert into trains_detail values('Digha Express',' 12580',' Puri',' Digha','100','100','200','200','300','280');
+insert into trains_detail values('Duronto Express',' 22209 ','Mumbai',' Ct New Delhi','130','54','65','25','100','98');
+insert into trains_detail values('Gitanjali Express',' 12859',' Mumbai ','Howrah','60','60','80','80','75','70');
+insert into trains_detail values('Euphoric Exp.',' 11085',' Lokmanya Tilak','Madaoan','160','160','150','100','84','32');
+
